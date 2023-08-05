@@ -15,5 +15,5 @@ const geoLocation = async (position) => {
   );
   let  data = await response.json();
   console.log(data)
-  userLocation.innerText = `${data.address.state_district}, ${data.address.state}, ${data.address.country}`;
+  userLocation.innerText = `${data.address.county}, ${data.address.state}, ${data.address.country}, ${data.address.postcode}`;
 };
